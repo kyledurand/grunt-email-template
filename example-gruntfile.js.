@@ -1,0 +1,61 @@
+module.exports = function(grunt) {
+
+  'use strict';
+
+  grunt.initConfig({
+    includereplace: {
+      featured_products: {
+        options: {
+          globals: {
+            product_avatar_1: 'https://cdn.shopify.com/s/files/1/1064/4636/files/avatar_medium.jpg?16893653714283334820',
+            product_shop_name_1: 'shopLVC',
+            product_image_1: 'https://cdn.shopify.com/s/files/1/1064/4636/products/productImage_f2fd655c-f13e-4ee4-a63a-450c39931572.jpeg?v=1447808449',
+            product_price_1: '70.00 USD',
+            product_title_1: 'Spiritual Gangster | Sweatshirt',
+            product_url_1: 'https://shoplvc.sello.com/products/spiritual-gangster-sweatshirt',
+
+            product_avatar_2: '',
+            product_shop_name_2: '',
+            product_image_2: '',
+            product_price_2: '',
+            product_title_2: '',
+            product_url_2: ''
+          }
+        },
+        src: 'featured_products.html',
+        dest: 'final-templates/',
+        expand: true,
+        cwd: 'source-templates/'
+      },
+
+      featured_shops: {
+        options: {
+          globals: {
+            shop_avatar_1: 'https://cdn.shopify.com/s/files/1/1027/9831/files/avatar_medium.jpg?17242463475250746307',
+            shop_name_1: 'Thoughtshapes',
+            shop_description_1: 'A mix of vintage clothing & housewares',
+            shop_product_image_left_1: 'https://cdn.shopify.com/s/files/1/1027/9831/products/productImage_446fb8ec-f8ca-426c-93e6-cac7de7b1fa3.jpeg?v=1447008287',
+            shop_product_image_middle_1: 'https://cdn.shopify.com/s/files/1/1027/9831/products/productImage_888f07fd-44c9-46dd-bf81-302ff265e6bb.jpeg?v=1447015010',
+            shop_product_image_right_1: 'https://cdn.shopify.com/s/files/1/1027/9831/products/productImage_a7402e19-4866-40da-ab74-4c892ebcd911.jpeg?v=1447010115',
+            shop_url_1: 'https://thoughtshapes.sello.com/',
+
+            shop_avatar_2: '',
+            shop_name_2: '',
+            shop_description_2: '',
+            shop_product_image_left_2: '',
+            shop_product_image_middle_2: '',
+            shop_product_image_right_2: '',
+            shop_url_2: ''
+          }
+        },
+        src: 'featured_shops.html',
+        dest: 'final-templates/',
+        expand: true,
+        cwd: 'source-templates/'
+      },
+    }
+  });
+
+  grunt.loadTasks('tasks');
+  grunt.registerTask('default', ['includereplace']);
+};
