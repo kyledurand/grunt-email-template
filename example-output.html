@@ -1,168 +1,269 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Sello - Discover</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <!--[if !mso]><!-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!--<![endif]-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title></title>
+
+  <!--HIDE DIN FROM OUTLOOK -->
+  <!--[if gte mso 9]>
   <style type="text/css">
+      body, table, td, h1, h2, h3, p, a, div, span {font-family: Helvetica, Arial, sans-serif !important;}
+  </style>
+  <![endif]-->
 
-    * { box-sizing: border-box; }
+  <!--[if (gte mso 9)|(IE)]>
+  <style type="text/css">
+      table {border-collapse: collapse;}
+  </style>
+  <![endif]-->
 
-    /*================ Client resets ================*/
+  <style type="text/css">
+    @font-face {
+      font-family:'DIN';
+      font-style: normal;
+      font-weight: 300;
+      font-style:normal;
+      src:url('https://getsello.com/assets/DINWeb_Light-f7078cf2a51e9efcab217225165ed9dd34c5da66786d6d60a52f62cfdbe6ff93.woff') format("woff");
+    }
 
-    #outlook a { padding: 0; } /* Force Outlook to provide a "view in browser" message */
-    p, span, font, td, div  { line-height: 100%; } /* Force Hotmail to display normal line spacing */
-    body, table, td, p, a, li, blockquote { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; } /* Prevent WebKit and Windows mobile changing default text sizes */
-    table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; } /* Remove spacing between tables in Outlook 2007 and up */
-    img { -ms-interpolation-mode: bicubic; } /* Allow smoother rendering of resized image in Internet Explorer */
+    @font-face {
+      font-family:'DIN';
+      font-style: normal;
+      font-weight: 500;
+      font-style:normal;
+      src:url('https://getsello.com/assets/DINWeb-d2fb59a64d9e550d348d6ca91a5344fac56f67fc6f165dda33df18ca5f61d74d.woff') format("woff");
+    }
 
-    /*================ Resets ================*/
+    @font-face {
+      font-family:'DIN';
+      font-style: normal;
+      font-weight: 700;
+      font-style:normal;
+      src:url('https://getsello.com/assets/DINWeb_Medium-53b80bc204f313621452f2045461c4a0fffb0c05dd992abebd564f943f2305f7.woff') format("woff");
+    }
 
-    body { margin: 0; padding: 0; }
-    img { border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; }
-    table { border-collapse: collapse !important; }
-    body, #bodyCell { height: 100% !important; margin: 0; padding: 0; width: 100% !important; }
+    /* Stop iOS from auto-linking dates and locations */
+    a[x-apple-data-detectors] {
+      color: inherit !important;
+      text-decoration: none !important;
+      font-size: inherit !important;
+      font-family: inherit !important;
+      font-weight: inherit !important;
+      line-height: inherit !important;
+    }
+
+    p {margin-top: 1em;}
+
+    @media screen and (max-width: 480px) {
+
+      /* Full width table */
+      table[class="full-width-table"] {
+        width:100% !important;
+      }
+
+      /* Fluid image */
+      img[class="fluid-image"] {
+        width:100% !important;
+        height: auto !important;
+      }
+
+      /* Stop iOS from auto-linking dates and locations */
+      a[x-apple-data-detectors] {
+        color: inherit !important;
+        text-decoration: none !important;
+        font-size: inherit !important;
+        font-family: inherit !important;
+        font-weight: inherit !important;
+        line-height: inherit !important;
+      }
+    }
   </style>
 </head>
 
-<body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0" style="background-color: #eef2f2">
-  <center>
-    <table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" style="font-family: sans-serif;">
+<body style="margin: 0; padding: 0;">
+  <!-- INBOX PREVIEW TEXT -->
+  <span style="display:none !important; font-size:1px; color:#eef2f2;">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+  <table border="0" cellpadding="0" cellspacing="0" width="100%"  bgcolor="#eef2f2">
+    <!-- SELLO HEADER -->
+    <tr>
+      <td bgcolor="#ffffff"  align="center" style="min-width:78px;padding: 16px 0; border-bottom: 1px solid #cfd6d6;">
+        <a href="https://getsello.com">
+          <img style="display: block;" width="78" src="https://cdn.shopify.com/s/files/1/1050/5028/files/logo-dark.png" alt="Sello" />
+        </a>
+      </td>
+    </tr>
+
+    <tr>
+      <td align="center" style="padding: 15px 15px 0px 15px;">
+        <table class="full-width-table" border="0" cellpadding="0" cellspacing="0" width="480">
+          <!-- PREHEAD -->
+          <tr>
+            <td align="center"
+            style="
+            color: #272f39;
+            font-family: DIN, 'Helvetica Neue', Helvetica, sans-serif;
+            font-size: 1em;
+            font-weight: 700;
+            padding: 5px;
+            line-height: 1.5em;
+            ">
+            <span style="font-size:0.875em; font-weight:300; color: #8E949A;">
+              WEEKLY PICKS
+            </span>
+            <br>
+            These are the products we liked most this week
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+
+  <!-- CONTENT BOX -->
+  <tr>
+    <td bgcolor="#eef2f2" align="center" style="padding: 15px 0;">
+      <table class="full-width-table" border="0" cellpadding="0" cellspacing="0" width="480" bgcolor="#FFFFFF">
+
+        <!-- LOGO HEADER -->
+        <tr>
+          <td background="https://cdn.shopify.com/s/files/1/0070/7032/files/logo_bg.png?2797721400792735696" bgcolor="#272f39" width="480" valign="top" align="center" style="padding-bottom:20px; display:block;">
+            <a href="https://shoplvc.sello.com/products/spiritual-gangster-sweatshirt">
+              <img src="https://cdn.shopify.com/s/files/1/1064/4636/files/avatar_medium.jpg?16893653714283334820" style="
+                display:block;
+                border-radius: 80px;
+                border: 4px solid white;
+                position: relative;
+                top: 20px;" width="80">
+            </a>
+          </td>
+        </tr>
+
+        <!-- BLURB -->
+        <tr>
+          <td align="center" style="color: #272f39;
+          font-family: DIN, 'Helvetica Neue', Helvetica, sans-serif;
+          font-size: 14px;
+          font-weight: 300;
+          line-height: 24px;
+          padding: 0px 20px 15px 20px;">
+          <a href="https://shoplvc.sello.com/products/spiritual-gangster-sweatshirt" style="color: #272F39;">
+            <h1 style="font-size: 18px">shopLVC</h1>
+          </a>
+        </td>
+      </tr>
+      <!-- SAMPLE IMAGES -->
       <tr>
-        <td align="center" valign="top">
-          <table border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #ffffff; border-bottom: 1px solid #cfd6d6;">
+        <td align="center">
+          <table cellspacing="0" cellpadding="0">
             <tr>
-              <td valign="top">
-                <img style="margin: 16px auto; display: inherit;" width="78px" src="https://cdn.shopify.com/s/files/1/1050/5028/files/logo-dark.png" alt="Sello" />
+              <td style="padding: 2px; text-align: center; font-family: sans-serif; font-weight: bold;">
+                <a href="https://shoplvc.sello.com/products/spiritual-gangster-sweatshirt">
+                  <img src="https://cdn.shopify.com/s/files/1/1064/4636/products/productImage_f2fd655c-f13e-4ee4-a63a-450c39931572.jpeg?v=1447808449" width="400" style="border-radius: 3px; border: 1px solid #cfd6d6; max-width: 100%;" />
+                </a>
+                <p>$ 70.00 USD</p>
+                <p style="margin-bottom: 0;">Spiritual Gangster | Sweatshirt</p>
               </td>
             </tr>
           </table>
         </td>
       </tr>
       <tr>
-        <td align="center" valign="top" id="bodyCell" style="padding: 14px;">
-          <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 480px;">
-            <tr>
-              <td valign="top" style="text-align: center;">
-                <h2 style="font-size: 0.875em; font-weight: lighter; text-transform: uppercase; color: #8E949A;">Weekly picks</h2>
-                <h3 style="font-size: 1em; color: #272f39; line-height: 1.25em; margin: 0;">These are the products we liked most this week</h3>
-              </td>
-            </tr>
-
-            <!-- Products start -->
-
-            <tr>
-              <td align="center" valign="top">
-                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="height: 70px; background-color: #272f39; border-radius: 3px 3px 0 0; margin-top: 14px;">
-                  <tr>
-                    <td valign="top"></td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-
-            <tr style="margin-bottom: 14px;">
-              <td align="center" valign="top">
-                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="height: 70px; background-color: #ffffff; border-collapse: initial !important; padding: 0 5%; border-radius: 0 0 3px 3px; margin-bottom: 14px;" >
-                  <tr style="height: 70px; display: block;" align="center">
-                    <td background="https://cdn.shopify.com/s/files/1/1059/0206/files/avatar_medium.jpg" align="center" valign="top" style="
-                      background: url(https://cdn.shopify.com/s/files/1/1059/0206/files/avatar_medium.jpg) no-repeat center / 100% auto;
-                      position: relative;
-                      background-repeat: no-repeat;
-                      background-position: center center;
-                      top: -35px;
-                      width: 70px;
-                      height: 70px;
-                      background-size: 62px 62px;
-                      background-size: cover;
-                      border: 4px solid white;
-                      border-radius: 70px;
-                      margin: 0 auto;
-                      display: inline-block;
-                    ">
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <td style="text-align: center;">
-                      <h2 style="font-size: 1em; margin: 0 0 14px 0; color: #272f39;">Folk Print</h2>
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <td background="https://cdn.shopify.com/s/files/1/1059/0206/products/productImage_327d3f13-b73e-47d5-b02b-942cb47570cb.jpeg" align="center" valign="top" style="
-                      background: url(https://cdn.shopify.com/s/files/1/1059/0206/products/productImage_327d3f13-b73e-47d5-b02b-942cb47570cb.jpeg) no-repeat center / 100% auto;
-                      background-size: 100% 100%;
-                      background-size: cover;
-                      background-repeat: no-repeat;
-                      display: block;
-                      border-radius: 3px;
-                      border: 1px solid #cfd6d6;
-                      width: 100%;
-                      padding: 0 14px 100% 14px;
-                      margin-bottom: 14px;
-                    ">
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <td>
-                      <p style="text-align: center; margin: 0;">$28.00</p>
-                      <p style="text-align: center; font-family: sans-serif;">The Summit: One</p>
-                      <a href="" style="
-                        display: block;
-                        background-color: #28ca9d;
-                        color: #ffffff;
-                        font-family: sans-serif;
-                        text-decoration: none;
-                        text-transform: uppercase;
-                        text-align: center;
-                        width: 100%;
-                        padding: 10px 0;
-                        border-radius: 38px;
-                        margin-bottom: 5%;
-                      ">Buy now</a>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-
-            <!-- Products end -->
-
-            <!-- Footer start -->
-
-            <tr>
-              <td>
-                <table width="100%;" style="margin: 0 auto;">
-                  <tr>
-                    <td align="center">
-                      <a href="#" style="display: inline-block; padding: 5px 14px 0; border: 1px solid gray; border-radius: 22px; margin: 14px auto; min-height: 30px; color: #9FA7A7; text-decoration: none;">
-                        <div style="display: inline-block; width: 10px; height: 20px; vertical-align: middle; background: url(https://cdn.shopify.com/s/files/1/1050/5028/files/icon_facebook.png?15630134730385401736) no-repeat center / 100% auto;"></div>
-                        <p style="display: inline-block; margin: 0; font-size: 0.875em; vertical-align: middle;">Follow us</p>
-                      </a>
-                    </td>
-
-                    <td align="center">
-                      <a href="#" style="display: inline-block; padding: 5px 14px 0; border: 1px solid gray; border-radius: 22px; margin: 14px auto; min-height: 30px; color: #9FA7A7; text-decoration: none;">
-                        <div style="display: inline-block; width: 18px; height: 20px; vertical-align: middle; background: url(https://cdn.shopify.com/s/files/1/1050/5028/files/icon_twitter.png?15630134730385401736) no-repeat center / 100% auto;"></div>
-                        <p style="display: inline-block; margin: 0; font-size: 0.875em; vertical-align: middle;">Tweet us</p>
-                      </a>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-
-            <tr>
-              <td align="center">
-                <p style="margin: 0 0 10px; font-size: 0.75em; color: #9FA7A7;">You are receiving this because we want you to get the most out of Sello, but you can always unsubscribe.</p>
-              </td>
-            </tr>
-          </table>
+        <td align="center" style="padding: 20px 0;">
+          <!-- BULLETPROOF BUTTON -->
+          <div>
+            <table cellspacing="0" cellpadding="0" align="center">
+              <tr>
+                <td align="center" width="312" height="44" bgcolor="#28ca9d" style="-webkit-border-radius: 38px; -moz-border-radius: 38px; border-radius: 38px; color: #ffffff; font-size:18px; font-family: DIN, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight:500;">
+                  <a href="https://shoplvc.sello.com/products/spiritual-gangster-sweatshirt" style="text-decoration: none; line-height:44px; width:100%; display:inline-block; color: #FFFFFF; font-weight:normal;">
+                    &nbsp;&nbsp;SHOP&nbsp;&nbsp;
+                  </a>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <!-- END BULLETPROOF BUTTON -->
         </td>
       </tr>
     </table>
-  </center>
+  </td>
+</tr>
+
+<!-- FOOTER -->
+<tr>
+  <td align="center">
+    <table width="300">
+      <tr>
+        <tr>
+          <td align="center" style="padding: 0px 14px; border: 1px solid #9FA7A7; border-radius: 22px;">
+            <table>
+              <!--FACEBOOK BUTTON -->
+              <tr>
+                <td valign="middle" style="padding:10px;">
+                  <a href="https://www.facebook.com/getsello">
+                    <img src="https://cdn.shopify.com/s/files/1/1050/5028/files/icon_facebook.png?15630134730385401736" style="display: inline-block;" width="10" border="0">
+                  </a>
+                </td>
+                <td>
+                  <a href="https://twitter.com/sello" style="text-decoration:none; color: #9FA7A7;">
+                    <p style="display: inline-block; margin: 0; font-size: 0.875em; vertical-align: middle; font-family:DIN, 'Helvetica Neue', Helvetica, Arial, sans-serif;  color: #9FA7A7;">
+                      Follow us
+                    </p>
+                  </a>
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td>&nbsp;</td>
+          <!-- TWITTER BUTTON -->
+          <td align="center" style="padding: 0px 14px; border: 1px solid #9FA7A7; border-radius: 22px;">
+            <table>
+              <tr>
+                <td valign="middle">
+                  <a href="https://twitter.com/sello">
+                    <img src="https://cdn.shopify.com/s/files/1/1050/5028/files/icon_twitter.png?15630134730385401736" style="display: inline-block;" width="18" border="0">
+                  </a>
+                </td>
+                <td>
+                  <a href="https://twitter.com/sello" style="text-decoration:none; color: #9FA7A7;">
+                    <p style="display: inline-block; margin: 0; font-size: 0.875em; vertical-align: middle; font-family:DIN, 'Helvetica Neue', Helvetica, Arial, sans-serif; padding-left:5px; color: #9FA7A7;">
+                      Tweet us
+                    </p>
+                  </a>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+
+  <tr>
+    <td align="center" style="
+    color: #767676;
+    font-family: DIN, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 22px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    ">
+    <p>
+      You are receiving this because we want you to get the most out of
+      <a href="https://getsello.com" style="color: #5fc29b">Sello</a>,
+      <br>
+      but you can always
+      <a href="*|UNSUB|*" style="color: #5fc29b">unsubscribe</a>.
+    </p>
+
+    <p>
+      Sello, 150 Elgin Street, Ottawa ON, K2P 1L4<br>
+    </p>
+  </td>
+</tr>
+</table>
 </body>
 </html>
