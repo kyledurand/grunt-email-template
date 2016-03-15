@@ -1,3 +1,5 @@
+# * IMPORTANT, partials are out of date, please request an update before using them.
+
 # Variable based email template
 
 ## How to use
